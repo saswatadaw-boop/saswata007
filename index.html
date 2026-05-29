@@ -1,104 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Profile</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Arial, sans-serif;
+}
 
-        body{
-            background:#f4f4f4;
-        }
+body{
+    background:#0d0d0d;
+    color:white;
+    line-height:1.6;
+}
 
-        header{
-            background:#0078d7;
-            color:white;
-            padding:20px;
-            text-align:center;
-        }
+header{
+    text-align:center;
+    padding:50px 20px;
+    background:#111;
+    border-bottom:2px solid #00bfff;
+}
 
-        nav{
-            background:#005fa3;
-            padding:10px;
-            text-align:center;
-        }
+header h1{
+    font-size:3rem;
+    color:#00bfff;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
-        }
+header p{
+    color:#ccc;
+    margin-top:10px;
+}
 
-        .hero{
-            padding:60px;
-            text-align:center;
-            background:white;
-        }
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 0;
+}
 
-        .hero h1{
-            margin-bottom:15px;
-        }
+.section{
+    background:#1a1a1a;
+    margin-bottom:20px;
+    border-radius:10px;
+    overflow:hidden;
+    border:1px solid #333;
+}
 
-        .hero button{
-            padding:10px 20px;
-            background:#0078d7;
-            color:white;
-            border:none;
-            border-radius:5px;
-            cursor:pointer;
-        }
+.section summary{
+    padding:20px;
+    font-size:1.2rem;
+    font-weight:bold;
+    cursor:pointer;
+    background:#222;
+    color:#00bfff;
+}
 
-        .content{
-            padding:40px;
-            text-align:center;
-        }
+.section summary:hover{
+    background:#2a2a2a;
+}
 
-        footer{
-            background:#333;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:20px;
-        }
-    </style>
+.content{
+    padding:20px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.profile-img{
+    display:block;
+    margin:20px auto;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:4px solid #00bfff;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#888;
+    margin-top:30px;
+}
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>My Website</h1>
-    <p>Welcome to my first HTML website</p>
+    <h1>Dr. Your Name</h1>
+    <p>Research Scholar | Mechanical Engineering | Simulation & Design</p>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-</nav>
+<div class="container">
 
-<section class="hero">
-    <h1>Hello World!</h1>
-    <p>This is a simple HTML website.</p>
-    <button onclick="alert('Welcome!')">Click Me</button>
-</section>
+    <img src="https://via.placeholder.com/180" alt="Profile Photo" class="profile-img">
 
-<section class="content">
-    <h2>About Us</h2>
-    <p>
-        This website was created using HTML, CSS, and JavaScript.
-    </p>
-</section>
+    <details class="section">
+        <summary>About Me</summary>
+        <div class="content">
+            <p>
+                Welcome to my academic profile. My research interests include
+                Finite Element Analysis (FEA), COMSOL simulations, SolidWorks design,
+                fracture mechanics, and advanced materials.
+            </p>
+        </div>
+    </details>
+
+    <details class="section">
+        <summary>Education</summary>
+        <div class="content">
+            <ul>
+                <li>PhD in Mechanical Engineering</li>
+                <li>M.Tech in Design Engineering</li>
+                <li>B.Tech in Mechanical Engineering</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="section">
+        <summary>Research Interests</summary>
+        <div class="content">
+            <ul>
+                <li>Fracture Mechanics</li>
+                <li>COMSOL Multiphysics</li>
+                <li>Finite Element Analysis</li>
+                <li>Structural Design</li>
+                <li>Thermal Analysis</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="section">
+        <summary>Publications</summary>
+        <div class="content">
+            <ul>
+                <li>Publication 1</li>
+                <li>Publication 2</li>
+                <li>Publication 3</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="section">
+        <summary>Projects</summary>
+        <div class="content">
+            <ul>
+                <li>Crack Propagation Simulation using COMSOL</li>
+                <li>Structural Connector Design in SolidWorks</li>
+                <li>Thermal Analysis of Aluminium Structures</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="section">
+        <summary>Contact</summary>
+        <div class="content">
+            <p>Email: yourname@email.com</p>
+            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        </div>
+    </details>
+
+</div>
 
 <footer>
-    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+    © 2026 Academic Profile | All Rights Reserved
 </footer>
 
 </body>
